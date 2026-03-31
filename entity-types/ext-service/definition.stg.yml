@@ -297,6 +297,7 @@ synthesis:
       local_port:
         ttl: P1D
       host.name:
+        ttl: P1D
       service.name:
   
     # telemetry from NR eBPF agent client with instrumentation.provider newrelic-ebpf
@@ -332,6 +333,7 @@ synthesis:
       local_addr:
         ttl: P1D
       host.name:
+        ttl: P1D
       service.name:
 
     # telemetry from NR eBPF agent with instrumentation.provider newrelic-ebpf without any trace_role
@@ -365,6 +367,7 @@ synthesis:
       telemetry.sdk.language:
         entityTagName: language
       host.name:
+        ttl: P1D
       service.name:
 
     # IMPORTANT:
