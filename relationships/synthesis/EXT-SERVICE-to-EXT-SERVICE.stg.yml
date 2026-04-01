@@ -43,6 +43,8 @@ relationships:
         anyOf: ["Span"]
       - attribute: instrumentation.name
         anyOf: ["nr_ebpf"]
+      - attribute: trace_role
+        anyOf: ["server"]
     relationship:
       expires: PT75M
       relationshipType: CALLS
@@ -51,7 +53,7 @@ relationships:
           attribute: entity.guid
       target:
         lookupGuid:
-          candidateCategory: EXTEBPFSERVER
+          candidateCategory: EXTEBPFCLIENT
           fields:
             - field: ip
               attribute: remote_addr
