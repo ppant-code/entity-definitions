@@ -295,11 +295,11 @@ synthesis:
       telemetry.sdk.language:
         entityTagName: language
       local_addr:
-        ttl: P4H
+        ttl: PT4H
       local_port:
-        ttl: P4H
+        ttl: PT4H
       host.name:
-        ttl: P4H
+        ttl: PT4H
       service.name:
   
     # telemetry from NR eBPF agent client with instrumentation.provider newrelic-ebpf
@@ -335,9 +335,9 @@ synthesis:
       telemetry.sdk.language:
         entityTagName: language
       local_addr:
-        ttl: P4H
+        ttl: PT4H
       host.name:
-        ttl: P4H
+        ttl: PT4H
       service.name:
 
     # telemetry from NR eBPF agent with instrumentation.provider newrelic-ebpf without any trace_role
@@ -373,7 +373,7 @@ synthesis:
       telemetry.sdk.language:
         entityTagName: language
       host.name:
-        ttl: P4H
+        ttl: PT4H
       service.name:
 
     # IMPORTANT:
